@@ -1,0 +1,51 @@
+.task-item {
+  padding: 10px;
+
+  border: 1px solid rgb(115, 115, 115);
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  border-radius: 5px;
+
+  display: flex;
+}
+
+.task-item div:first-child {
+  flex-grow: 1;
+  margin-right: 10px;
+  text-overflow: ellipsis;
+  overflow-wrap: break-word;
+  display: flex;
+  flex-direction: column;
+}
+
+.task-item div span:first-child {
+  margin-bottom: 10px;
+}
+
+.task-item button {
+  background-color: rgb(206, 3, 3);
+  color: white;
+  border: none;
+  padding: 5px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  align-self: start;
+}
+
+.task-item button:hover {
+  background-color: rgb(233, 1, 1);
+}
+
+.task-actions {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
